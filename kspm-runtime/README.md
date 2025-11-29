@@ -33,7 +33,7 @@ The **kspm-runtime** Helm chart consolidates multiple AccuKnox and third-party c
 | `global.clusterName` | Cluster name |
 | `global.tenantId` / `global.authToken` | Tenant authentication |
 | `global.enableJobsUrl` | Enable job URL reporting |
-| `global.inClusterScan.enabled` | Enable kubeshield parameter |
+| `global.inClusterScan.enabled` | Enable kubeshield-chart |
 
 ---
 
