@@ -15,6 +15,7 @@ The **kspm-runtime** Helm chart consolidates multiple AccuKnox and third-party c
 | kiem-job | 0.1.0 | `global.kiem.enabled` |
 | knoxguard-chart | v0.2.1 | `admissionController.enabled` |
 | kyverno | 3.3.7 | `kyverno.enabled` |
+| kubeshield-chart | v0.2.3 | `global.inClusterScan.enabled` |
 
 ---
 
