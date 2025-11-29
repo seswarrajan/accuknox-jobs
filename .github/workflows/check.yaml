@@ -7,10 +7,11 @@ on:
 
 jobs:
   check-approvers:
+    name: Check required approvals
     runs-on: ubuntu-latest
 
     steps:
-      - name: Check required approvals
+      - name: Require specific approvers
         uses: mszostok/required-approvals@v2
         with:
           # GitHub token
