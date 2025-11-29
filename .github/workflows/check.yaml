@@ -1,0 +1,31 @@
+name: "Mandatory Approvers Check"
+
+on:
+  pull_request:
+    paths:
+      - "charts/kspm-runtime/**"
+
+jobs:
+  check-approvers:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check required approvals
+        uses: mszostok/required-approvals@v2
+        with:
+          # GitHub token
+          token: ${{ secrets.GH_ORG_TOKEN }}
+
+          # THESE USERS MUST APPROVE
+          required_approvals: 1
+          required_reviewers: |
+            Priyaccuknox
+
+          # Optional reviewers (ignored)
+          ignored_reviewers: |
+            vishnusomank
+            PaveenV
+            kprateep
+
+          # The PR must be approved by these 3 users
+          fail_on_missing_reviewers: true
