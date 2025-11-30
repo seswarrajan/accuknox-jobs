@@ -3,9 +3,9 @@ name: "Mandatory Approvers Check"
 on:
   pull_request:
     branches:
-      - "jobs-consul"
+      - "*"
     paths:
-      - "charts/kspm-runtime/**"
+      - "**"
       
 jobs:
   check-approvers:
