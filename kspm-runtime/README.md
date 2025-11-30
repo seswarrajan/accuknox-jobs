@@ -8,7 +8,7 @@ The **kspm-runtime** Helm chart consolidates multiple AccuKnox and third-party c
 
 | Chart | Version | Condition |
 |-------|---------|-----------|
-| agents-chart | v0.10.8-test | `global.agents.enabled` |
+| agents-chart | v0.11.11 | `global.agents.enabled` |
 | kubearmor-operator | v1.5.7 | `kubearmor-operator.enabled` |
 | cis-k8s-job | 0.1.0 | `global.cis.enabled` |
 | k8s-risk-assessment-job | 0.1.0 | `global.riskassessment.enabled` |
